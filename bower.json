@@ -1,0 +1,24 @@
+{
+  "name": "app",
+  "description": "no desc",
+  "main": "",
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-material": "~0.11.4",
+    "angular-ui-router": "~0.2.15",
+    "angular": "~1.4.7",
+    "bootstrap": "~3.3.5",
+    "chai": "~3.4.2",
+    "jquery": "~2.1.4",
+    "underscore": "~1.8.3"
+  }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="App">
+<head>
+    <meta charset="UTF-8">
+    <title>Autotests</title>
+    <link href="bower_components/angular-material/angular-material.css" rel="stylesheet">
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="app/styles/main.css" rel="stylesheet">
+    <link href="app/styles/spinner.css" rel="stylesheet">
+</head>
+<body>
+
+    <div ui-view></div>
+
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="bower_components/angular-material/angular-material.min.js"></script>
+    <script src="vendor/xml2json.js"></script>
+
+    <script src="app/scripts/polyfills.js"></script>
+
+    <script src="app/scripts/app.js"></script>
+
+    <script src="app/scripts/controllers/MainPageCtrl.js"></script>
+
+    <script src="app/scripts/directives/spoiler.js"></script>
+    <script src="app/scripts/directives/holder.js"></script>
+
+    <script src="app/scripts/services/ApiParser.js"></script>
+    <script src="app/scripts/services/Tester.js"></script>
+    <script src="app/scripts/services/ReportStorage.js"></script>
+    <script src="app/scripts/services/ReportFactory.js"></script>
+    <script src="app/scripts/services/Config.js"></script>
+    <script src="app/scripts/services/HolderService.js"></script>
+
+</body>
+</html>

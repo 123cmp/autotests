@@ -1,0 +1,27 @@
+<h1 class="title">Test results
+    <label class="onlyFailed">Only failed
+    <input type="checkbox" ng-click="toggleOnlyFailed">
+    </label>
+</h1>
+
+<div layout="row" layout-wrap class="list-group test-list">
+    <a flex="grow" class='list-group-item' ng-repeat="report in results">
+        <span class="label label-default label-pill pull-right"
+             ng-class="{'valid': report.testResult.isValid,
+             'invalid': !report.testResult.isValid,}">
+             <i class='glyphicon' ng-class="{'glyphicon-ok': report.testResult.isValid,
+             'glyphicon-remove': !report.testResult.isValid}"></i>
+        </span>
+        <span class='label label-default label-pill label-time' ng-bind="report.time"></span>
+        <h4 class='list-group-item-heading' ng-bind="report.name"></h4>
+        <p class='list-group-item-text' ng-bind="report.request.method + ' ' + report.request.url.split('api/')[1]"></p>
+        <p class='list-group-item-text' ng-class="{'invalid': !report.testResult.isValid}"
+           ng-bind="report.response.status + ' ' + report.response.statusText"></p>
+        <p class='list-group-item-text' ng-class="{'invalid': !report.testResult.isValid}"
+           ng-bind="report.testResult.message"></p>
+        <spoiler class="trace-spoiler" ng-if="report.testResult.trace" array="report.testResult.trace" label="Trace"
+                 title="{{report.testResult.traceMessage}}"></spoiler>
+    </a>
+</div>
+
+<holder></holder>

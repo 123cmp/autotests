@@ -1,0 +1,72 @@
+.title {
+    padding-left: 1%;
+    padding-bottom: 20px;
+    font-family: Arial;
+}
+
+.onlyFailed {
+    float:right;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.label.label-default.label-pill.pull-right.valid {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+
+.label.label-default.label-pill.pull-right.invalid {
+    color: #fff;
+    background-color: #c9302c;
+    border-color: #761c19;
+}
+
+.test-list h4 {
+    /*padding-left: 9%;*/
+}
+
+.test-list p.invalid {
+    color: #c9302c;
+}
+
+.test-list .label-time {
+    display: block;
+    position: absolute;
+    /* top: 44px; */
+    top: -17px;
+    float: right;
+    right: 7px;
+    border: 1px solid rgb(221, 221, 221);
+    background-color: white;
+    color: #333;
+    border-bottom: none;
+}
+
+.test-list .list-group-item:hover .label-time {
+    color: #555;
+    text-decoration: none;
+    background-color: #f5f5f5;
+}
+
+.spoiler {
+    padding: 1%;
+}
+
+.spoiler span {
+    color: #333;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.spoiler span:hover {
+    color: #555;
+    text-decoration: none;
+}
+
+.trace-spoiler p.title {
+    color: #c9302c;
+}
+
+
+

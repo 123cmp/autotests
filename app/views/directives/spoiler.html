@@ -1,0 +1,8 @@
+<div class='spoiler'>
+    <span ng-bind="label" ng-click="toggleSpoiler()"></span>
+    <div ng-show="expand">
+        <p class="title" ng-bind="title"></p>
+        <p ng-repeat="text in array" ng-bind="text"></p>
+    </div>
+
+</div>
